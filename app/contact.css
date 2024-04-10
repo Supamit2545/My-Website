@@ -1,0 +1,124 @@
+.concontainer{
+    display: flex;
+}
+.Infomaions{
+    background-color: rgb(243, 183, 218);
+    border-radius: 50px;
+    width: 35%;
+    height: 500px;
+    text-align: center;
+    border-right: 3px solid black;
+}
+.Form{
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column ;
+    background-color: rgb(240, 134, 134);
+    width: 65%;
+    height: 500px;
+    text-align: center;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid red;
+    border-radius: 50px;
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.submit:active{
+    border: 5px solid;
+    border-bottom: none;
+    border-color: red;
+    border-radius: 50px;
+    background-color:#0de63c;
+}
+.sender{
+    color:#19682a;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.contact-inputs{
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 20px;
+    height: 10%;
+    width: 40%;
+    border-radius: 50px;
+    border: 2px solid black;
+    outline: none;
+    text-align: start;
+}
+.textarea{
+    border-radius: 20px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 30%;
+    width: 40%;
+    outline: none;
+}
+
+.textarea:focus{
+    border: 2px solid rgb(190, 140, 46);
+    padding: 2%;
+}
+.contact-inputs:focus{
+    border: 2px solid rgb(190, 140, 46);
+    padding: 2%;
+}
+
+.onlineicon{
+    align-items: center;
+    display: flex;
+    margin-left: 2%;
+    justify-content: space-between;
+    font-size: 80PX;
+    margin-top: 2%;
+    position: absolute;
+    width: 30%;
+    height: 150px;
+}
+.facebook{
+    margin-left: 60px;
+    color: blue;
+    background-color: white;
+    border-radius: 50px;
+}
+.Instagram{
+    margin-right: 60px;
+    background: radial-gradient(circle at 33% 100%,#fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 20px;
+}
+@media screen and (max-width:500px) {
+    .concontainer{
+        display:flex;
+        flex-direction: column;
+    }
+    .Infomaions{
+        width: auto;
+        justify-content:space-between;
+    }
+    .Form{
+        width: auto;
+    }
+    .contact-inputs{
+        width: auto;
+    }
+    .textarea{
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+}

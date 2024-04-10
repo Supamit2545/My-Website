@@ -1,0 +1,179 @@
+.Skcontainer{
+    background-color: rgb(255, 224, 224);
+    border-color: black;
+    border-radius: 20px;
+    border-width: 3px;
+    height: 50vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.skh1{
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: underline;
+}
+.active-tab{
+    cursor:crosshair;
+    text-shadow:
+        0 0 15px #e912ba80,
+        0 0 5px #e912ba80,
+        0 0 10px #e912ba80,
+        0 0 20px #0fa,
+        0 0 50px #0fa,
+        0 0 25px #0fa,
+        0 0 15px #0fa,
+        0 0 20px #0fa
+}
+.skulbutton{
+    text-align: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    height: 50px;
+    margin: auto;
+    width: 75%;
+    gap: 50px;
+}
+
+.tab{
+    background-color: white;
+    font-size: xx-large;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-width: 2px;
+    border-color: rgb(103, 184, 238);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.tab :hover{ 
+    text-shadow:
+        0 0 15px #e912ba80,
+        0 0 5px #e912ba80,
+        0 0 10px #e912ba80,
+        0 0 20px #0fa,
+        0 0 50px #0fa,
+        0 0 25px #0fa,
+        0 0 15px #0fa,
+        0 0 20px #0fa;
+}
+
+.skcons{
+    position: relative;
+    justify-content: space-between;
+    margin: auto;
+}
+.skconweb{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.skconwebli{
+    display: grid;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    align-content: center;
+    justify-items: center;
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+}
+.blob{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    background-color: rgb(233, 14, 233);
+    border-radius: 20px;
+
+}
+
+@keyframes bounce {
+    0%{
+        transform: translate(-100%,-100%) translate3d(0,0,0);
+    }
+    25%{
+        transform: translate(-100%,-100%) translate3d(100%,0,0);
+    }
+    50%{
+        transform: translate(-100%,-100%) translate3d(100%,100%,0);
+    }
+    75%{
+        transform: translate(-100%,-100%) translate3d(0,100%,0);
+    }
+    100%{
+        transform: translate(-100%,-100%) translate3d(0,0,0);
+    }
+}
+.skconapp{
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content{
+    display:none;
+    position: relative;
+    
+}
+
+.active-content{
+    margin-top: 5%;
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    div.Skcontainer{
+        height: auto;
+        margin-top: 200px;
+    }
+    div.skconweb{
+        height:auto;
+    }
+    div.skconwebli{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    div.Skcontainer{
+        height: auto;
+    }
+    div.skcons{
+        margin-top: 150px;
+    }
+    
+}
+@media screen and (max-width: 675px) {
+    div.Skcontainer{
+        height: auto;
+        margin-top: 200px;
+    }
+    div.skconweb{
+        height:auto;
+    }
+    div.skcons{
+        margin-top: 300px;
+    }
+}
+@media screen and (max-width: 1050) {
+    div.Skcontainer{
+        height: auto;
+    }
+    div.skcons{
+        margin-top: 250px;
+    }
+  }

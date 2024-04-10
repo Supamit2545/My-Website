@@ -1,0 +1,92 @@
+.aboutme{
+    margin-top: 1%;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+}
+.aboutmecon{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.userimg{
+    margin-top: 50px;
+    margin-left: 20px;
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.textam{
+    width: 500px;
+    font-size: 30px;
+    margin-top: 10%;
+    margin: 30px;
+    font-weight: bold;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.downloader{
+    padding: 10px;
+    margin-right: 5%;
+    gap: 10px;
+    font-size: xx-large;
+    border: 5px solid;
+    border-top: none;
+    border-color: #12eed1;
+    border-radius: 50px;
+    background-color:#4009c2;
+}
+.downloader :hover{
+    text-shadow:
+    0 0 15px #12dbe980,
+    0 0 5px #e912ba80,
+    0 0 10px #e912ba80,
+    0 0 20px #0fa,
+    0 0 50px #0fa,
+    0 0 25px #0fa,
+    0 0 15px #0fa,
+    0 0 20px #0fa;
+}
+.downloader:active{
+    border: 5px solid;
+    border-bottom: none;
+    border-color: #12eed1;
+    border-radius: 50px;
+    background-color:#4009c2;
+}
+
+@media screen and (max-width:1470px) {
+    /* For tablets: */
+    div.aboutme{
+        height: 50%;
+    }
+    div.aboutmecon{
+        width: 100%
+    }
+    div.userimg{
+        margin-top: 50px;
+        margin-left: 20px;
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    div.downloader{
+        display: grid;
+    }
+  }
+@media screen and (max-width:430px) {
+    /* For mobile phones: */
+    div.aboutme{
+      width: 100%;
+      height: 900px;
+    }
+    div.downloader{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+  }
